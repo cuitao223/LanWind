@@ -1,0 +1,43 @@
+project: LanWind
+model:
+  levels: 5
+  hidden_channels: [64, 32]
+  kernel_size: 3
+  forecast_steps: 60
+  maximum_input_frames: 23
+  residual: true
+grid:
+  shape: [33, 33]
+  spacing_m: 200.0
+  heights_m: [100, 150, 200, 250, 300]
+  x_positive: east
+  y_positive: north
+  origin: radar
+data:
+  history_minutes: 120
+  forecast_minutes: 360
+  max_gap_seconds: 900
+  split_ratios: [0.70, 0.15, 0.15]
+normalization:
+  mean_uv: [0.5693446871834119, 0.35055709348860065]
+  std_uv: [3.363381155834267, 5.752555246971829]
+  dt_mean_minutes: 6.209332001137902
+  fitted_on: original_training_partition
+  dt_missing_value: -1.0
+training:
+  epochs: 50
+  patience: 8
+  batch_size: 32
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  seed: 42
+  loss: masked_smooth_l1
+  workers: 0
+evaluation:
+  horizons_minutes: [15, 30, 60, 120, 180, 360]
+  nearest_scan_tolerance_seconds: 450
+  calm_speed_ms: 1.0
+risk:
+  threshold_s_1: 0.0006461422308348119
+  quantile: 0.95
+  designation: training_derived_visualization_threshold

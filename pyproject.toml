@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lanwind"
+version = "1.0.0"
+description = "Radar and GFS conditioned residual ConvLSTM for six-hour wind-field forecasting"
+requires-python = ">=3.12"
+license = "MIT"
+dependencies = ["torch>=2.7", "numpy>=1.26", "PyYAML>=6.0"]
+
+[tool.setuptools]
+packages = ["lanwind"]

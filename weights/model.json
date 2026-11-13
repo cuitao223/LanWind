@@ -1,0 +1,8 @@
+{
+  "name": "LanWind",
+  "architecture": "Two-layer encoder and two-layer decoder ConvLSTM, 64/32 hidden channels",
+  "parameters": 639082,
+  "format": "PyTorch state_dict only",
+  "sha256": "da010b219d9d2441c88c79838d1459dd3d2ed523a67044c5383ba8a11e4c8863",
+  "license": "MIT"
+}

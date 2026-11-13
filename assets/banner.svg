@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="400" viewBox="0 0 1440 400">
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#071a32"/><stop offset="1" stop-color="#07456a"/></linearGradient><linearGradient id="wind"><stop stop-color="#32d9d0"/><stop offset="1" stop-color="#9be7fd"/></linearGradient></defs>
+<rect width="1440" height="400" rx="24" fill="url(#bg)"/>
+<g fill="none" stroke="url(#wind)" stroke-width="3" opacity=".65">
+<path d="M770 110 C900 -20 1040 200 1460 70"/><path d="M760 150 C950 20 1080 230 1460 110"/><path d="M750 190 C940 80 1110 260 1460 155"/><path d="M740 230 C950 140 1160 300 1460 200"/><path d="M730 270 C990 210 1170 340 1460 250"/><path d="M720 310 C960 290 1230 370 1460 300"/></g>
+<g font-family="Arial, sans-serif"><text x="76" y="150" font-size="88" font-weight="700" fill="#fff">LanWind</text><text x="80" y="210" font-size="26" fill="#a7f1ec">RADAR MEETS ATMOSPHERIC CONTEXT</text><text x="80" y="271" font-size="24" fill="#d5e7f5">Residual ConvLSTM · Multi-source fusion · Six-hour forecasting</text><text x="80" y="339" font-size="19" fill="#8cc6dc">639K parameters / 60 forecast steps / Local-first data workflow</text></g>
+</svg>
